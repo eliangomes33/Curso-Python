@@ -5,7 +5,7 @@
 # positivo.
 # print(11) # int
 # print(-11) # int
-# print(0)
+# print(0) int
 
 # float -> Número com ponto flutuante
 # O tipo float representa qualquer número

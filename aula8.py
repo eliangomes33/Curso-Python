@@ -1,4 +1,4 @@
-nome = 'Elian'
+nome = input("Digite seu nome: ")
 sobrenome = 'Gomes'
 idade = 23
 ano_nascimento = 2023 - idade
