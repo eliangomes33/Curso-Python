@@ -1,5 +1,8 @@
-valor1 = input('Digite um valor: ')
-valor2 = input('Digite outro valor: ')
+valor_1 = input('Digite um valor: ')
+valor_2 = input('Digite outro valor: ') 
+
+valor1 = int(valor_1)
+valor2 = int(valor_2)#Se estiver como strig ele não identificar como número inteiro, mas como texto dando erro
 
 if valor1 > valor2:
     print(f'O primeiro valor {valor1} é maior que o segundo valor {valor2}')
