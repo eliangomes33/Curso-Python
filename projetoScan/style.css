@@ -1,0 +1,44 @@
+.titulo{
+    color: rgb(157, 27, 27);
+    text-align: center;
+    padding: 20px 0; 
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-container{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.form-container input {
+  padding: 10px 14px;
+  width: 100%;
+  max-width: 300px; /* Evita que o input fique excessivamente largo */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.botao-scan:hover{
+    background-color: rgb(6, 6, 139);
+}
+.botao-scan:active{
+    background-color: #003d80;
+}
+
+body{
+    background-color: black;
+}
