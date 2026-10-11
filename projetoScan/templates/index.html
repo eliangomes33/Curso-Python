@@ -3,19 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="static/style.css">
+    <title>Scan Port</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <div class="titulo">
         <h1>Scan Port</h1>
     </div>
-    <div class="form-container" >
-        <input type="text" id="entrada_Ip" placeholder="Digite o IP">
-        <button class="botao-scan">Scanear</button>
+    <div class="form-container">
+        <form action="/" method="POST">
+            <input type="text" name="entrada_Ip" id="entrada_Ip" placeholder="Digite o IP" value="{{ ip if ip else '' }}">
+            <button class="botao-scan" type="submit">Escanear</button>
+        </form>
     </div>
+    <div class="resultado-area">
+        {% if ip %}
+            <h3>Resultados para {{ ip }}:</h3>
 
-
-    
+            {% if portas %}
+                <p>Portas TCP Abertas:</p>
+                {% for porta in portas %}
+                    <span class="badge-porta">Porta {{ porta }}</span>
+                {% endfor %}
+            {% else %}
+                <p style="color: #ff6b6b;">Nenhuma das portas testadas está aberta.</p>
+            {% endif %}
+        {% endif %}
+    </div>
 </body>
 </html>

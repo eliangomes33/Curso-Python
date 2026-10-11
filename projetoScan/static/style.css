@@ -1,4 +1,10 @@
-.titulo{
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.titulo {
     color: rgb(157, 27, 27);
     text-align: center;
     padding: 20px 0; 
@@ -6,8 +12,8 @@
     margin: 0 auto;
 }
 
-.form-container{
-    background-color: blueviolet;
+.form-container {
+    background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,30 +21,49 @@
     gap: 12px;
 }
 
+.form-container form {
+    display: flex;
+    gap: 8px;
+}
+
 .form-container input {
-  padding: 10px 14px;
-  width: 100%;
-  max-width: 300px; /* Evita que o input fique excessivamente largo */
-  border: 1px solid #ccc;
-  border-radius: 6px;
+    padding: 10px 14px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
 }
 
 .form-container button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
-.botao-scan:hover{
+.botao-scan:hover {
     background-color: rgb(6, 6, 139);
 }
-.botao-scan:active{
+
+.botao-scan:active {
     background-color: #003d80;
 }
 
-body{
-    background-color: black;
+/* Estilos adicionados para os resultados do scan */
+.resultado-area {
+    margin: 30px auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+.badge-porta {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin: 4px;
+    font-weight: bold;
 }
